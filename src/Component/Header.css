@@ -2,7 +2,6 @@
 
 /* 전체 헤더 컨테이너: 로고, 네비게이션, 유저 정보를 가로로 배치 */
 header {
-  background-color: #ffffff; /*흰색 배경 */
   padding: 0 50px; /* 좌우 여백 */
   height: 80px; /* 헤더 높이 고정 */
   display: flex; /* 가로 배치 */
