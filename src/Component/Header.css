@@ -1,0 +1,118 @@
+/* Header.css */
+
+/* 전체 헤더 컨테이너: 로고, 네비게이션, 유저 정보를 가로로 배치 */
+header {
+  background-color: #ffffff; /*흰색 배경 */
+  padding: 0 50px; /* 좌우 여백 */
+  height: 80px; /* 헤더 높이 고정 */
+  display: flex; /* 가로 배치 */
+  justify-content: space-between; /* 요소들 사이에 균등 간격 */
+  align-items: center; /* 수직 중앙 정렬 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* 살짝 그림자 추가하여 구분감 */
+  position: relative;
+  z-index: 1000;
+}
+
+/* 로고 스타일 (기존 h1 대체) */
+header h1.logo {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: 900; /* 굵게 */
+  color: #333333;
+  margin: 0;
+  letter-spacing: 2px; /* 자간 넓게 */
+  text-transform: uppercase; /* 대문자 변환 */
+  cursor: pointer;
+}
+
+/* 네비게이션 메뉴 (기존 ul.topnav 대체) */
+nav ul.topnav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 30px; /* 메뉴 사이 간격 */
+  background-color: transparent; /* 배경 투명하게 */
+}
+
+/* 메뉴 링크 스타일 */
+nav ul.topnav li a {
+  display: block;
+  text-decoration: none;
+  color: #555555; /* 진한 회색 텍스트 */
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase; /* 대문자 변환 */
+  padding: 5px 0;
+  transition: color 0.3s ease;
+  border-bottom: 2px solid transparent; /* 호버 시 밑줄 효과 준비 */
+}
+
+/* 호버 및 활성화 상태 */
+nav ul.topnav li a:hover,
+nav ul.topnav li a.active {
+  color: #6c63ff; /* 이미지의 보라색 포인트 컬러 */
+  background-color: transparent; /* 배경색 변경 없음 */
+  border-bottom: 2px solid #6c63ff; /* 밑줄 포인트 */
+}
+
+/* 헤더 우측 (유저 정보 및 버튼) */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-info {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* 로그인/로그아웃 버튼 스타일 (이미지의 보라색 버튼 느낌) */
+.auth-button {
+  background-color: #6c63ff; /* 보라색 배경 */
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 20px; /* 둥근 버튼 */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth-button:hover {
+  background-color: #5a52d5; /* 호버 시 약간 진하게 */
+}
+
+/* ---------------------------------- */
+/* 서브 메뉴 스타일 (이미지에는 없지만 기능 유지를 위해 깔끔하게 정리) */
+/* ---------------------------------- */
+ul.subnav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #f9f9f9; /* 연한 회색 */
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  margin: 0;
+  list-style: none;
+}
+
+ul.subnav li a {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+ul.subnav li a:hover,
+ul.subnav li a.subnav-active {
+  background-color: #e0e0ff; /* 아주 연한 보라색 배경 */
+  color: #6c63ff;
+  font-weight: bold;
+}
