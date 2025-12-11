@@ -9,6 +9,7 @@ import MazeRL from "./Pages/MazeRL";
 import AiVtuber from "./Pages/AiVtuber";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
+import ProductUpsert from "./Pages/ProductUpsert";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/aivtuber" element={<AiVtuber />} />
+          <Route path="/product_upsert" element={<ProductUpsert />} />
           <Route path="/maze" element={<Maze />} />
           <Route path="/mazerl" element={<MazeRL />} />
         </Routes>

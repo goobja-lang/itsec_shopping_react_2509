@@ -3,6 +3,7 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useAuthStore } from "../store/authStore";
 import { useShallow } from "zustand/shallow";
 import React from "react";
+import { useState } from "react";
 
 export default function Header() {
   const userInfo = useAuthStore((state) => state?.userInfo);
@@ -40,12 +41,21 @@ export default function Header() {
 
             <li>
               <Link
-                to="/video_upload"
+                to="/product_upsert"
                 className={
-                  location.pathname === "/video_uplaod" ? "active" : ""
+                  location.pathname === "/product_upsert" ? "active" : ""
                 }
               >
-                VIDEO UPLOAD
+                PRODUCT - UPLOAD
+              </Link>
+            </li>
+
+            <li>
+              <Link
+                to="/aivtuber"
+                className={location.pathname === "/aivtuber" ? "active" : ""}
+              >
+                AIVTUBER
               </Link>
             </li>
           </ul>
@@ -80,21 +90,6 @@ export default function Header() {
           )}
         </div>
       </header>
-
-      {/* 2. 서브 메뉴 (헤더 바로 아래 위치) */}
-      {isImgTestPage && (
-        <ul className="subnav">
-          <li>
-            <Link to="/imgtest?model=base">기본 모델</Link>
-          </li>
-          <li>
-            <Link to="/imgtest?model=muffin_chihuahua">치와와vs머핀</Link>
-          </li>
-          <li>
-            <Link to="/imgtest?model=plantdisease">식물병충해</Link>
-          </li>
-        </ul>
-      )}
     </div>
   );
 }
