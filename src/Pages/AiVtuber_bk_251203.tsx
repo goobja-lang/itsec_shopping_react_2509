@@ -182,7 +182,7 @@ const AiVtuber: React.FC = () => {
               fontSize: "16px",
               fontWeight: "bold",
               color: "white",
-              backgroundColor: "#4A90E2",
+              backgroundColor: "#6c63ff",
               border: "none",
               borderRadius: "10px",
               cursor: "pointer",

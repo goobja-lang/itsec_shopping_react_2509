@@ -220,7 +220,7 @@ const AiVtuber: React.FC = () => {
               fontSize: "14px",
               borderRadius: "8px",
               border: "none",
-              background: "#4A90E2",
+              background: "#6c63ff",
               color: "white",
               cursor: "pointer",
               boxShadow: "0 2px 5px rgba(0,0,0,0.2)",
@@ -313,7 +313,7 @@ const AiVtuber: React.FC = () => {
           <span
             style={{
               fontWeight: "bold",
-              color: "#4A90E2",
+              color: "#6c63ff",
               display: "block",
               marginBottom: "5px",
             }}
@@ -451,7 +451,7 @@ const AiVtuber: React.FC = () => {
               fontSize: "16px",
               fontWeight: "bold",
               color: "white",
-              backgroundColor: isStreaming ? "#ccc" : "#4A90E2",
+              backgroundColor: isStreaming ? "#ccc" : "#6c63ff",
               border: "none",
               borderRadius: "10px",
               cursor: isStreaming ? "not-allowed" : "pointer",

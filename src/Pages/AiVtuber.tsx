@@ -365,7 +365,7 @@ const AiVtuber: React.FC = () => {
                 style={{
                   alignSelf: msg.role === "user" ? "flex-end" : "flex-start",
                   maxWidth: "90%",
-                  backgroundColor: msg.role === "user" ? "#4A90E2" : "#FFF",
+                  backgroundColor: msg.role === "user" ? "#6c63ff" : "#FFF",
                   color: msg.role === "user" ? "white" : "black",
                   borderRadius: "15px",
                   borderTopRightRadius: msg.role === "user" ? "2px" : "15px",
@@ -408,7 +408,7 @@ const AiVtuber: React.FC = () => {
                   <div
                     style={{
                       fontSize: "12px",
-                      color: "#4A90E2",
+                      color: "#6c63ff",
                       marginBottom: "4px",
                       fontWeight: "bold",
                     }}
@@ -552,7 +552,7 @@ const AiVtuber: React.FC = () => {
               fontSize: "16px",
               fontWeight: "bold",
               color: "white",
-              backgroundColor: isStreaming ? "#ccc" : "#4A90E2",
+              backgroundColor: isStreaming ? "#ccc" : "#6c63ff",
               border: "none",
               borderRadius: "10px",
               cursor: isStreaming ? "not-allowed" : "pointer",
